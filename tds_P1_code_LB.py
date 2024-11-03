@@ -3,7 +3,7 @@ import csv
 import time
 
 # GitHub API token
-GITHUB_TOKEN = 'GITHUB_ACCESS_TOKEN'
+GITHUB_TOKEN = 'github token'
 HEADERS = {"Authorization": f"token {GITHUB_TOKEN}"}
 
 # Helper function to clean up company names
@@ -13,7 +13,7 @@ def clean_company_name(company):
     return company
 
 # Function to fetch users from the GitHub API
-def fetch_users(city="Barcelona", min_followers=100):
+def fetch_users(city="Boston", min_followers=100):
     users = []
     page = 1
 
